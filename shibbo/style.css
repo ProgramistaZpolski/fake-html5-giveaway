@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    margin-top: 30vh;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+button {
+    font-size: 1.5rem !important;
+}
+
+h2 {
+    font-size: 10rem;
+    position: absolute;
+    top: 10px;
+    left: 40%;
+    color: red;
+    font-weight: 900;
+    animation-name: oofAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes oofAnim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

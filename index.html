@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giveaway</title>
+    <link rel="stylesheet" href="pzplui.css">
+</head>
+<body>
+    <h1>Kliknij aby wziąść udział w giveawayu!</h1>
+    <button class="btn btn-normal" onclick="h();">Weź udział!</button>
+    <script>
+        function h() {
+            let win = window.open("./popup.html", "Hentaje Kukanqa");
+            setTimeout(function () {
+                win.close();
+                document.querySelector("button").textContent = "Dziękujemy za wzięcie udziału!!!";
+            }, 500);
+        }
+    </script>
+</body>
+</html>
